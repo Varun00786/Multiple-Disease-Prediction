@@ -1,6 +1,8 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 import joblib
+from sklearn.linear_model import LogisticRegression
+from sklearn.neighbors import KNeighborsClassifier
 model=joblib.load("d1")
 model1=joblib.load("heart_model")
 model2=joblib.load("pakinson_model")
