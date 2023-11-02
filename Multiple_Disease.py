@@ -7,7 +7,7 @@ model=joblib.load("d1")
 model1=joblib.load("heart_model")
 model2=joblib.load("pakinson_model")
 
-
+st.set_page_config(layout="wide")
 with st.sidebar:
     
     selected=option_menu(options=["Diabetes Disease Prediction","Heart Disease Prediction","Parkinson's Disease Prediction"],
